@@ -1,7 +1,10 @@
 body{
-    margin-left: 200px;
-    margin-right: 200px;
+    /* margin-left: 200px;
+    margin-right: 200px; */
     box-sizing: border-box;
+    margin: auto 0;
+  
+    
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
@@ -11,11 +14,11 @@ body{
     }
 
     50%{
-        transform: translateX(50px) rotate(360deg);
+        transform: translateX(250px) rotate(360deg);
     }
 
     100%{
-        transform: translateX(100px);
+        transform: translateX(500px);
     }
 }
 
@@ -25,10 +28,10 @@ body{
     }
 
     50%{
-        transform: translateX(50px) rotate(360deg);
+        transform: translateX(250px) rotate(180deg);
     }
     100%{
-        transform: translateX(100px);
+        transform: translateX(500px) rotate(360deg);
     }
 }
 
@@ -36,27 +39,29 @@ body{
 
 
 .eye{
-    animation: anim 5s  linear alternate infinite;
-    -webkit-animation: anim 5s  linear alternate infinite;
+    animation: anim 10s  linear alternate infinite;
+    -webkit-animation: anim 10s  linear alternate infinite;
     animation-delay: initial;
 }
 
 .nom{
-    color: blueviolet;
+  
+    color: #403075;
+     font-family: 'Bangers',
+     cursive;
 }
 
-h1{
-    font-family: 'Bangers', cursive;
-    
-}
+
 
 header{
 
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     /* text-align: center; */
     font-size: 2em;
     /* display: flex;
     justify-content: space-between; */
+    height: 500px;
+    background-color: #F0E5DE;
    
 }
 
@@ -66,6 +71,12 @@ header{
     padding-top: 100px;
     
     
+    
+}
+
+#soustitre{
+    font-style: italic;
+    color: darkslategrey;
 }
 
 .eye{
@@ -88,53 +99,140 @@ header{
 
 
 nav a:hover{
-    color: blueviolet;
+    color: #403075;
     text-decoration-line: underline;
 
 }
 
+/* .mouton{
+    margin-left: 10%;
+} */
+
+.mouton     {
+    font-size: 20px;
+    border-radius: 10px;
+    background-color:white;
+    padding: 10px;
+    border: none;
+    width: 112px;
+    height: 110px;
+    margin-right: 120px;
+  
+   
+}
+
+a .mouton  {
+    color: #403075;
+    font-family: Cambria,
+    Cochin,
+    Georgia,
+    Times,
+    'Times New Roman',
+    serif;
+}
+
+a:hover .mouton{
+    background-color: #F0E5DE;
+    color: #403075;
+}
+
+
+    a .retourhome{
+     color: whitesmoke;
+     font-family: Cambria,
+     Cochin,
+     Georgia,
+     Times,
+     'Times New Roman',
+     serif;
+}
+
+.retourhome {
+    display: flex;
+    align-self: flex-end;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #403075;
+   
+    padding: 10px;
+    border: none;
+}
+
+
+h2 {
+    width: 300px;
+}
+
 #me{
     display: flex;
-    background-color: aquamarine;
+    background-color: #403075;
     padding: 80px;
+    color:whitesmoke;
+     margin: 10px 10px;
+     justify-content: space-between;
+     flex-direction: row;
+     align-items: center;
+
        
 }
 
 
 
-#about{
-    background-color: blueviolet;
-    padding: 70px;
-  
+.mylife{
+    /* column-count: 2;
+    column-fill: balance;
+    column-width: 200px;
+     -webkit-column-width: 200px;
+     -moz-column-width: 200px;
+     text-align: left; */
+     max-width: 500px;
+     
+     
+}
+.webstart{
+    width: 112px;
+    height: 110px;
+    border-radius: 10px;
+    margin-left: 100px;
+
+    
 }
 
 
 
-.photo {
-    list-style-type: none;
+#about{
+    background-color: #646ecb;
+    padding: 70px;
     display: flex;
+    justify-content: space-around;
+    flex-wrap: row wrap;
+     margin: 10px 10px;
+  
+}
+
+#coeur{
+    color:pink;
+}
+
+
+.photo p {
+
+   
     font-size: 1.3em;
     font-weight: bold;
     color: black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    justify-content: space-around; 
+    text-align: center;
 
 }
 
 
-.ulun{
+.ulun,.uldeux,.ultrois{
     height: 150px;
     border-radius: 50%;
     padding-left: 55px;
     padding-right: 55px;
 
-}
-
-
-#about span{
-    display: inline-block;
-    width: 260px;
-    text-align: center;
 }
 
 
@@ -144,8 +242,8 @@ nav a:hover{
     font-size: 2em;
 } */
 
-.berk{
-     list-style-type: none;
+.berk p{
+
     display: flex;
     font-size: 1.3em;
     font-weight: bold;
@@ -154,88 +252,68 @@ nav a:hover{
     justify-content: space-around; 
 
 }
-
-.uldeux{
-    height: 150px;
-     padding-left: 55px;
-    padding-right: 55px;
-}
-#jedeteste span{
-   
-   
-    display: inline-block;
-    width: 260px;
-    text-align: center;   
-    
-} 
 
 
 
 #jedeteste{
     padding:50px;
-    background-color: plum;
+    background-color: #dedcee;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 10px;
+    
+    
 }
 
 
- .madame{
-     list-style-type: none;
-    display: flex;
+ .madame p{
+
+
     font-size: 1.3em;
     font-weight: bold;
     color: black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    justify-content: space-around; 
     font-weight: bold;
+    text-align: center;
 
  }
-
-.ultrois{
-     height: 150px;
-     padding-left: 55px;
-    padding-right: 55px;
-}
 
  
- #iam span{
-    
-   
-    display: inline-block;
-    width: 260px;
-    text-align: center
-  
-    
- }
+
 
  #iam{
 
-     background-color: lightskyblue;
-     padding:50px
+     background-color:#A087EE;
+     padding:50px;
+     display: flex;
+     justify-content: space-around;
+     margin: 10px 10px
+     
      
  }
 
  #lieux{
 
     background-color: azure;
-    padding: 70px;
+     display: flex;
+     justify-content: space-around;
+     padding: 50px;
+      margin: 10px 10px;
 
  }
 
- .voyages li img{
-       height: 150px;
-       width: 150px;
+ .travel{
+
        border-radius: 50%;
        padding-left: 55px;
        padding-right: 55px;
- }
+     height: 150px;
+     width: 150px;
+ } 
 
- .voyages{
-     list-style-type: none;
-     display: flex;
-     justify-content: space-around;
-     padding-top: 30px;
- }
 
-.nomslieux{
+
+.voyages p{
 
      font-size: 1.3em;
      font-weight: bold;
@@ -246,15 +324,11 @@ nav a:hover{
      Times,
      'Times New Roman',
      serif;
-     display: flex;
-     justify-content: space-around;
      font-weight: bold;
+     text-align: center;
 
 }
 
-.alpes{
-    padding-right: 30px;
-}
 
 .yellow{
     padding-right: 10px;
@@ -274,6 +348,104 @@ a{
     text-decoration: none;
 }
 
+  .imgcv{
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 2%;
+     margin-bottom: 2%;
+     
+
+ }
+
+.pagecv{
+    display: flex;
+    flex-direction: column;
+      
+    
+}
+
+.retourhome{
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2%;
+   
+}
+
+.header2{
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+@media (max-width:600px){
+    #me,#about,#jedeteste,#iam,#lieux,h1{
+    
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+
+    .nav{
+        
+        flex-direction: column;
+       
+    }
+
+    header{
+        height: 400px;
+    }
+
+    .aurel{
+        font-size: 20px;
+        padding-top: 50px;
+    }
+
+    #soustitre{
+        font-size: 22px;
+    }
+
+    .eye{
+        display: none;
+    }
+
+    #me{
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+
+    .webstart{
+        margin-left: 0;
+        margin-top: 20px;
+        
+    
+    }
+
+    .mouton{
+        
+        margin-right: 0; 
+        margin-top: 20px;   
+    }
+
+    .responsiveh2{
+        text-align: center;
+        width: 150px;
+    }
+
+    .aurel{
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        display: block;
+        
+    }
+    
+} 
 
 
 
